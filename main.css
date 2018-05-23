@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+}
+
+nav, footer {
+  padding: 2vh 0;
+  background-color: #aaa;
+  width: 100%;
+}
+
+/* Nav Bar */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Hero */
+header {
+  margin: 0 5%;
+  padding: 3em 0;
+}
+
+/* Sections */
+section {
+  background-color: lightgray;
+  margin: 0;
+  padding: 2em 0;
+}
+
+section:nth-of-type(even) {
+  background-color: darkgray;
+}
+
+p {
+  margin: 0;
+}
