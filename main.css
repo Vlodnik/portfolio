@@ -70,7 +70,7 @@ nav {
 .burger-button {
   width: 35px;
   height: 5px;
-  background-color: black;
+  background-color: darkgreen;
   margin: 6px 0;
 }
 
@@ -116,11 +116,36 @@ section:nth-of-type(even) {
   background-color: darkgray;
 }
 
-p {
-  margin: 0;
+/* Projects */
+#projects {
+  background-color: white;
 }
 
-/* Projects */
+#projects h2 {
+  border-bottom: 5px solid darkgreen;
+  margin: 0 auto 30px;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 45%;
+}
+
 .project {
-  padding: 1em 0;
+  border: 2px solid lightgray;
+  border-radius: 3px;
+  margin-bottom: 1.5em;
+  padding: 0 0 2em;
+}
+
+.project img {
+  display: block;
+  margin: 0 auto 20px;
+  width: 100%;
+}
+
+.project h3 {
+  margin-top: 1.5em;
+}
+
+.project p {
+  margin: 0 1em;
 }
