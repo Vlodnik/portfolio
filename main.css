@@ -14,22 +14,95 @@ h1, h2, h3 {
 }
 
 nav, footer {
-  padding: 2vh 0;
-  background-color: #aaa;
+  padding: 0;
+  margin: 0;
+  background-color: white;
   width: 100%;
 }
 
 /* Nav Bar */
 nav {
+  border-bottom: 1px solid gray;
+  display: flex;
   position: sticky;
   top: 0;
   z-index: 10;
+  height: 10vh;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  margin-left: 1px;
+  margin-right: auto;
+  text-align: left;
+}
+
+.home img {
+  width: 22%;
+  max-width: 250px;
+}
+
+#mobile-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0 25px;
+  width: 100%;
+}
+
+#mobile-nav li {
+  list-style: none;
+  padding: 0;
+}
+
+#hamburger {
+  background: none;
+  border: none;
+}
+
+#hamburger:hover {
+  cursor: pointer;
+}
+
+.burger-button {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
 }
 
 /* Hero */
 header {
-  margin: 0 5%;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  url(https://s3.amazonaws.com/et-portfolio-images/nyc.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
   padding: 3em 0;
+  height: 90vh;
+}
+
+header::before {
+  background: inherit;
+  -webkit-filter: blur(12px);
+  filter: blur(12px);
+}
+
+header h1, header h2 {
+  /* background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)); */
+  background: inherit;
+  color: white;
+  position: relative;
+  bottom: 5vh;
+  margin: 0 5% 0.5em;
 }
 
 /* Sections */
