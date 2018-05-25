@@ -55,7 +55,8 @@ nav {
 
 #mobile-nav li {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 #hamburger {
@@ -74,8 +75,24 @@ nav {
   margin: 6px 0;
 }
 
-#dropdown {
+.dropdown {
   display: none;
+  position: absolute;
+  right: 0;
+  top: 10vh;
+  list-style: none;
+  margin-top: 0;
+  padding: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.dropdown li {
+  display: block;
+  background-color: darkgreen;
+  color: white;
+  border-bottom: 1px solid white;
+  padding: 1em 0;
 }
 
 .is-active {
