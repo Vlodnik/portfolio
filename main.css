@@ -74,9 +74,19 @@ nav {
   margin: 6px 0;
 }
 
+#dropdown {
+  display: none;
+}
+
+.is-active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /* Hero */
 header {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background: linear-gradient(rgba(0, 20, 0, 0.4), rgba(0, 60, 0, 0.4)),
   url(https://s3.amazonaws.com/et-portfolio-images/central-park.jpg);
   background-attachment: fixed;
   background-position: center;
@@ -208,6 +218,44 @@ svg {
 }
 
 /* About */
+#about {
+  background-color: rgb(0, 50, 70);
+}
+
+#about h2 {
+  color: white;
+  border-bottom: 5px solid white;
+}
+
 #about img {
   width: 100%;
+}
+
+#about p {
+  color: white;
+  text-align: left;
+}
+
+/* Contact */
+#contact {
+  background-color: white;
+}
+
+#contact-links {
+  margin: 2em 0 1em;
+}
+
+.fa-2x {
+  color: black;
+}
+
+.fa-github {
+  margin: 0 20px;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(rgb(255, 255, 255), rgb(248, 248, 248));
+  padding: 1.5em 0;
+  font-size: 0.8em;
 }

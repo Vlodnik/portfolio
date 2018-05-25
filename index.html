@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Evan Thompson: Web Developer</title>
     <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="main.css">
   </head>
@@ -20,6 +21,11 @@
             <div class="burger-button"></div>
             <div class="burger-button"></div>
           </button>
+          <ul id="dropdown">
+            <li>Projects</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
         </li>
       </ul>
     </nav>
@@ -141,11 +147,19 @@
           maintainable code.
         </p>
       </section>
-      <section>
+      <section id="contact">
         <h2>Contact</h2>
-        <h3>Let's build something! I can be reached at these links:</h3>
+        <p>Let's build something! I can be reached by following these links</p>
+        <div id="contact-links">
+          <a href="mailto:evanbrowningthompson@gmail.com"><i class="far fa-envelope fa-2x"></i></a>
+          <a href="https://github.com/Vlodnik" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+          <a href="https://www.linkedin.com/in/evanbthompson" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
       </section>
     </main>
-    <footer>Evan Thompson 2018</footer>
+    <footer>
+      <i class="far fa-copyright"></i>
+      Evan Thompson 2018
+    </footer>
   </body>
 </html>
