@@ -356,6 +356,9 @@ footer {
 
   #about-box p {
     color: rgb(0, 50, 70);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 2em;
   }
 }
