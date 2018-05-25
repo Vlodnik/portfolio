@@ -28,6 +28,7 @@ nav {
   top: 0;
   z-index: 10;
   height: 10vh;
+  min-height: 65px;
 }
 
 .home {
@@ -128,7 +129,6 @@ header::before {
 }
 
 header h1, header h2 {
-  background: inherit;
   color: white;
   position: relative;
   bottom: 5vh;
