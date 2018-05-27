@@ -11,7 +11,7 @@ function toggleMenu(e) {
 function scrollToTop(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop: 0});
-  if($('.dropdown').hasClass('is-active')) {
+  if($('.menu').hasClass('is-active')) {
     toggleMenu(e);
   }
 }
@@ -21,7 +21,7 @@ function scrollToProjects(e) {
   const scrollCorrection = window.innerHeight / 10 - 2;
   $('html, body').animate({scrollTop: $('#projects').offset().top - scrollCorrection});
 
-  if($('.dropdown').hasClass('is-active')) {
+  if($('.menu').hasClass('is-active')) {
     toggleMenu(e);
   }
 }
@@ -31,7 +31,7 @@ function scrollToAbout(e) {
   const scrollCorrection = window.innerHeight / 10 - 2;
   $('html, body').animate({scrollTop: $('#about').offset().top - scrollCorrection});
 
-  if($('.dropdown').hasClass('is-active')) {
+  if($('.menu').hasClass('is-active')) {
     toggleMenu(e);
   }
 }
@@ -41,7 +41,7 @@ function scrollToContact(e) {
   const scrollCorrection = window.innerHeight / 10 - 2;
   $('html, body').animate({scrollTop: $('#contact').offset().top - scrollCorrection});
 
-  if($('.dropdown').hasClass('is-active')) {
+  if($('.menu').hasClass('is-active')) {
     toggleMenu(e);
   }
 }
@@ -55,15 +55,15 @@ function handleScrollToTop() {
 }
 
 function handleScrollToProjects() {
-  $('.dropdown li:first-child').click(scrollToProjects);
+  $('.proj-button').click(scrollToProjects);
 }
 
 function handleScrollToAbout() {
-  $('.dropdown li:nth-child(2)').click(scrollToAbout);
+  $('.about-button').click(scrollToAbout);
 }
 
 function handleScrollToContact() {
-  $('.dropdown li:nth-child(3)').click(scrollToContact);
+  $('.contact-button').click(scrollToContact);
 }
 
 function setupListeners() {
